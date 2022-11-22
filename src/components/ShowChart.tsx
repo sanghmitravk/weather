@@ -1,6 +1,5 @@
 import Chart from "react-google-charts";
-export const LineChart = ({ chartData }) => {
-  console.log(chartData);
+export const LineChart = ({ chartData }: any) => {
   const LineChartOptions = {
     hAxis: {
       title: "Days",
@@ -23,7 +22,7 @@ export const LineChart = ({ chartData }) => {
         { role: "tooltip", type: "string", p: { html: true } },
       ],
     ];
-    chartData.map((chart, index) =>
+    chartData.map((chart: any, index: number) =>
       LineData.push([
         index,
         chart.temp_min,
@@ -41,10 +40,10 @@ export const LineChart = ({ chartData }) => {
 
   return (
     <div className="chart-container">
-      <h2 style={{ textAlign: "center" }}>Line Chart</h2>
+      <h2 style={{ textAlign: "center" }}>{chartData.length} days forecast</h2>
       <Chart
-        width={"700px"}
-        height={"410px"}
+        width={"inherit"}
+        height={"inherit"}
         chartType="LineChart"
         loader={<div>Loading Chart</div>}
         data={generateArray()}
