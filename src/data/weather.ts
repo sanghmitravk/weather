@@ -1,0 +1,30 @@
+export const weather = {
+  coord: { lon: 77.7552, lat: 13.0056 },
+  weather: [
+    { id: 803, main: "Clouds", description: "broken clouds", icon: "04n" },
+  ],
+  base: "stations",
+  main: {
+    temp: 23.13,
+    feels_like: 23.54,
+    temp_min: 22.23,
+    temp_max: 23.13,
+    pressure: 1013,
+    humidity: 78,
+  },
+  visibility: 6000,
+  wind: { speed: 2.57, deg: 10 },
+  clouds: { all: 75 },
+  dt: 1669120336,
+  sys: {
+    type: 1,
+    id: 9205,
+    country: "IN",
+    sunrise: 1669078255,
+    sunset: 1669119568,
+  },
+  timezone: 19800,
+  id: 1269936,
+  name: "Hoskote",
+  cod: 200,
+};
