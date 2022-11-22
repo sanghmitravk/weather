@@ -38,7 +38,7 @@ export const App = () => {
   }
 
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getWeather = () => {
     return fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=12.9716&lon=77.5946&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
       .then((res) => handleResponse(res))
